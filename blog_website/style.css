@@ -1,0 +1,143 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: azure;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+    gap: 10px;
+}
+.hedding{
+    font-family:poppins;
+    font-size: 47px;
+}
+.fstpara{
+    font-family: poppins;
+    font-size: 20px;
+}
+.gd{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(2,1fr);
+    margin: 30px 8rem;
+    row-gap: 40px;
+    margin-bottom: 50px;
+}
+@media (min-width:650px) {
+    .gd{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (min-width:1080px) {
+    .gd{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media (min-width:1340px) {
+    .gd{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+
+
+.imgcon {
+    height: 15rem;
+    position: relative;
+    overflow: hidden;
+}
+.img{
+   /* position: absolute; */
+   object-fit: cover;
+   object-position: center;
+   height: 100%;
+   width: 100%;
+   border-top-left-radius: 15px;
+   border-top-right-radius: 15px;
+}
+a{
+    text-decoration: none;
+}
+.box{
+   
+    border: 1px solid rgb(160, 156, 156);
+    box-sizing: border-box;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    height: 25rem;
+    overflow: hidden;
+}
+
+.box:hover .img{
+    transform: scale(1.2);
+    transition-duration: 300ms;
+}
+
+.info_con{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1rem;
+    font-family: poppins;
+   
+}
+.footer_info{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 10px;
+}
+.author_info_con{
+    display: flex;
+    align-items: center;
+
+}
+.author_avtar img{
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 100px;
+    
+    align-self: flex-start;
+}
+
+.author_info{
+    display: flex;
+    flex-direction: column;
+    font-family: poppins;
+    font-size: 12px;
+}
+.tag{
+    font-family: poppins;
+    align-self: center;
+    justify-self: flex-end;
+    border: 1px solid rgb(160, 156, 156);
+    padding: 5px;
+    border-radius: 10px;
+}
+.title a{
+    color: black;
+}
+
+.title a:hover{
+    color: rgb(127, 62, 187);
+}
+.dis{
+    font-size: 13px;
+}
+.author_name{
+    color: rgb(53, 53, 238);
+}
+.con{
+    margin-bottom: 50px;
+}
